@@ -12,7 +12,7 @@ A simple and efficient Merkle Tree implementation in Go.
 ## Installation
 
 ```bash
-go get github.com/danielmercer0503/merkletree
+go get gocommunity.io/merkletree
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ go get github.com/danielmercer0503/merkletree
 package main
 
 import (
-    "github.com/danielmercer0503/merkletree"
+    "gocommunity.io/merkletree"
     "fmt"
 )
 

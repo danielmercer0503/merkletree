@@ -1,3 +1,3 @@
-module github.com/danielmercer0503/merkletree
+module gocommunity.io/merkletree
 
 go 1.25.0
