@@ -30,6 +30,8 @@ func (m *MerkleTree) GenerateProof(index int) ([]Proof, error) {
 	return proof, nil
 }
 
+// GenerateProof generates a Merkle proof for the leaf at the given index.
+// It returns a slice of Proof objects and an error if the index is invalid.
 func VerifyProof(
 	leaf []byte,
 	proof []Proof,
@@ -48,3 +50,6 @@ func VerifyProof(
 
 	return string(computed) == string(root)
 }
+
+// VerifyProof verifies a Merkle proof for a given leaf and root using the provided hash function.
+// It returns true if the proof is valid, false otherwise.

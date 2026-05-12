@@ -18,6 +18,8 @@ func NewMerkleTree(data [][]byte, hash HashFunc) *MerkleTree {
 	return tree
 }
 
+// NewMerkleTree creates a new Merkle tree from the given data and hash function.
+// It returns a pointer to the constructed MerkleTree.
 func (m *MerkleTree) buildTree() {
 
 	current := m.Leaves
@@ -43,6 +45,7 @@ func (m *MerkleTree) buildTree() {
 	}
 }
 
+// buildTree constructs the Merkle tree levels from the leaves up to the root.
 func (m *MerkleTree) Root() []byte {
 	last := m.Levels[len(m.Levels)-1]
 	return last[0]
